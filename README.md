@@ -16,6 +16,11 @@ Plasticidad, algoritmo de mapeo de retorno
 3. matrixfn.m / Matriz Kr de la estructura (matriz reducida por condiciones de borde) --function--
 4. gradconj.m / Método del Gradiente Conjugado --function--
 
+### Referencias
+1. Simo, J.C. and Hughes, T.J.R. (1998) Computational Inelasticity. Springer-Verlag, New York.
+1. Bazzano, J.B., Pérez Zerpa, J. (2017) Introducción al Análisis No Lineal de Estructuras, Montevideo, Uruguay.
+
+
 ### Ejemplo:
 
 ![fig1](https://user-images.githubusercontent.com/104937664/182744989-27ebfd10-c7e4-4781-80af-2d0f59a2e547.jpg)
