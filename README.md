@@ -18,8 +18,9 @@ Plasticidad, algoritmo de mapeo de retorno
 
 ### Referencias
 1. Simo, J.C. and Hughes, T.J.R. (1998) Computational Inelasticity. Springer-Verlag, New York.
-1. Bazzano, J.B., Pérez Zerpa, J. (2017) Introducción al Análisis No Lineal de Estructuras, FING, Universidad de la República, Montevideo, Uruguay.
+1. Bazzano, J.B., Pérez Zerpa, J. (2017) Introducción al Análisis No Lineal de Estructuras, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay.
 1. Morton E. Gurtin (1981) Introduction to Continuum Mechanics (Mathematics in Science and Engineering, Volume 158), Carnegie-Mellon University, Pittsburgh, Pennsylvania.
+1. A. Canelas (2013) Elasticidad finita --Apuntes del curso--, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay..
 
 ### Ejemplo:
 
