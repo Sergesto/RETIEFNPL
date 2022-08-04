@@ -1,20 +1,20 @@
 # RETIEFNPL
 ### RETIculado Elasticidad Finita No lineal PLástica
-#### para MATLAB o GNU-Octave
+#### para MATLAB o GNU–Octave
 
 Estructuras Reticuladas 3D
 
-Elasticidad finita, material de Saint Venant-Kirchhoff
+Elasticidad finita, material de Saint Venant–Kirchhoff
 
-Deformación de Green-Lagrange, hipótesis de pequeñas deformaciones
+Deformación de Green–Lagrange, hipótesis de pequeñas deformaciones
 
 Plasticidad, algoritmo de mapeo de retorno
 
 ### Contenido
 1. retiefnpl.m (main program)
-2. amr.m / Algoritmo de mapeo de retorno --function--
-3. matrixfn.m / Matriz Kr de la estructura (matriz reducida por condiciones de borde) --function--
-4. gradconj.m / Método del gradiente conjugado --function--
+2. amr.m / Algoritmo de mapeo de retorno –function–
+3. matrixfn.m / Matriz Kr de la estructura (matriz reducida por condiciones de borde) –function–
+4. gradconj.m / Método del gradiente conjugado –function–
 
 ### Referencias
 1. Simo, J.C. and Hughes, T.J.R. (1998) Computational Inelasticity. Springer-Verlag, New York.
