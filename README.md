@@ -16,7 +16,7 @@ Plasticidad, algoritmo de mapeo de retorno
 3. matrixfn.m / Matriz Kr de la estructura (matriz reducida por condiciones de borde) --function--
 4. gradconj.m / Método del Gradiente Conjugado --function--
 
-# Ejemplo:
+### Ejemplo:
 
 ![fig1](https://user-images.githubusercontent.com/104937664/182744989-27ebfd10-c7e4-4781-80af-2d0f59a2e547.jpg)
 ![fig2](https://user-images.githubusercontent.com/104937664/182745127-7b927523-817e-400a-abb3-d0db8ce2ea0c.jpg)
