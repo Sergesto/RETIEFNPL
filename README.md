@@ -22,7 +22,7 @@ Plasticidad, algoritmo de mapeo de retorno
 1. Morton E. Gurtin (1981) Introduction to Continuum Mechanics (Mathematics in Science and Engineering, Volume 158), Carnegie-Mellon University, Pittsburgh, Pennsylvania.
 1. A. Canelas (2013) Elasticidad Finita –apuntes del curso–, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay.
 
-### Ejemplo:
+### Ejemplo
 
 ![fig1](https://user-images.githubusercontent.com/104937664/182744989-27ebfd10-c7e4-4781-80af-2d0f59a2e547.jpg)
 ![fig2](https://user-images.githubusercontent.com/104937664/182745127-7b927523-817e-400a-abb3-d0db8ce2ea0c.jpg)
