@@ -17,10 +17,10 @@ Plasticidad, algoritmo de mapeo de retorno
 4. gradconj.m / Método del gradiente conjugado –function–
 
 ### Referencias
-1. Simo, J.C. and Hughes, T.J.R. (1998) Computational Inelasticity. Springer-Verlag, New York.
-1. Bazzano, J.B., Pérez Zerpa, J. (2017) Introducción al Análisis No Lineal de Estructuras, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay.
-1. Morton E. Gurtin (1981) Introduction to Continuum Mechanics (Mathematics in Science and Engineering, Volume 158), Carnegie-Mellon University, Pittsburgh, Pennsylvania.
-1. A. Canelas (2013) Elasticidad Finita –apuntes del curso–, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay.
+- Simo, J.C. and Hughes, T.J.R. (1998) Computational Inelasticity. Springer-Verlag, New York.
+- Bazzano, J.B., Pérez Zerpa, J. (2017) Introducción al Análisis No Lineal de Estructuras, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay.
+- Morton E. Gurtin (1981) Introduction to Continuum Mechanics (Mathematics in Science and Engineering, Volume 158), Carnegie-Mellon University, Pittsburgh, Pennsylvania.
+- A. Canelas (2013) Elasticidad Finita –apuntes del curso–, Facultad de Ingeniería, Universidad de la República, Montevideo, Uruguay.
 
 ### Ejemplo
 
