@@ -2,13 +2,10 @@
 ### RETIculado Elasticidad Finita No lineal PLástica
 #### para MATLAB o GNU–Octave
 
-Estructuras Reticuladas 3D
-
-Elasticidad finita, material de Saint Venant–Kirchhoff
-
-Deformación de Green–Lagrange, hipótesis de pequeñas deformaciones
-
-Plasticidad, algoritmo de mapeo de retorno
+- Estructuras Reticuladas 3D
+- Elasticidad finita, material de Saint Venant–Kirchhoff
+- Deformación de Green–Lagrange, hipótesis de pequeñas deformaciones
+- Plasticidad, algoritmo de mapeo de retorno
 
 ### Contenido
 1. retiefnpl.m (main program)
