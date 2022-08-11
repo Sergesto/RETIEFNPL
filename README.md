@@ -8,10 +8,10 @@
 - Plasticidad, algoritmo de mapeo de retorno
 
 ### Contenido
-1. retiefnpl.m (main program)
-2. amr.m / Algoritmo de mapeo de retorno –function–
-3. matrixfn.m / Matriz Kr de la estructura (matriz reducida por condiciones de borde) –function–
-4. gradconj.m / Método del gradiente conjugado –function–
+- retiefnpl.m (main program)
+- amr.m / Algoritmo de mapeo de retorno –function–
+- matrixfn.m / Matriz Kr de la estructura (matriz reducida por condiciones de borde) –function–
+- gradconj.m / Método del gradiente conjugado –function–
 
 ### Referencias
 - Simo, J.C. and Hughes, T.J.R. (1998) Computational Inelasticity. Springer-Verlag, New York.
