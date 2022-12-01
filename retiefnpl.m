@@ -1,6 +1,12 @@
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
 % Estructuras Reticuladas 3D
 % Elasticidad finita /Material de Saint Venant-Kirchhoff\
-% DeformaciÛn de Green-Lagrange /HipÛtesis de pequeÒas deformaciones\
+% Deformaci√≥n de Green-Lagrange /Hip√≥tesis de peque√±as deformaciones\
 % Plasticidad /Algoritmo de mapeo de retorno\
 % Ing. Sergio A. Merlino Chiozza
 %
@@ -51,7 +57,7 @@ q=zeros(NNodos,3);
 epsilonn=zeros(NElem,1);
 %
 % Propiedades de la Estructura
-% Material y GeometrÌa
+% Material y Geometr√≠a
 %
 % Largo L inicial de los elementos
 %
@@ -67,13 +73,13 @@ for u=1:NElem
             L(u)=sqrt((xn1-xn2)^2+(yn1-yn2)^2+(zn1-zn2)^2);
 end
 %
-% ¡rea de las barras
+% √Årea de las barras
 %
 Ae=[pi*0.010^2/4;
     pi*0.012^2/4];
 %
-% MÛdulo de Elasticidad de Young
-% TensiÛn de fluencia / MÛdulo de plasticidad
+% M√≥dulo de Elasticidad de Young
+% Tensi√≥n de fluencia / M√≥dulo de plasticidad
 % Densidad de fuerza de masa
 %
 Ee=210e9; sy=250e6; mK=21e8; rho=7850;
@@ -101,7 +107,7 @@ while Fj~=FF
 %
 clc; deltad=zeros(NElem,NNodos);
 %
-% A˙n no se alcanzÛ el equilibrio (equi=0)
+% A√∫n no se alcanz√≥ el equilibrio (equi=0)
 %
 equi=1;
 %
@@ -109,7 +115,7 @@ equi=1;
 %
 A(:,9)=[0 Fj 0]';
 %
-% AquÌ se inicia la iteraciÛn (mÈtodo del gradiente conjugado)
+% Aqu√≠ se inicia la iteraci√≥n (m√©todo del gradiente conjugado)
 %
 cont=0;
 stop=0;
@@ -134,7 +140,7 @@ end
 %
 if cont==0
 %
-% PosiciÛn inicial
+% Posici√≥n inicial
 %
 g=[1 2];
 %
@@ -149,7 +155,7 @@ for q=1:NNodos
 end
 end
 %
-% MÈtodo del Gradiente Conjugado
+% M√©todo del Gradiente Conjugado
 %
 [A,cont,stop]=gradconj(A,Kr,FN,VEDr,NNodos,cont);
 %
@@ -222,9 +228,9 @@ for u=1:NElem
     fiit(n2,:)=fiit(n2,:)+[vfi(u,2)*l vfi(u,2)*m vfi(u,2)*n];
 end
 %
-fprintf(' |An·lisis Pl·stico-Elasticidad finita\n');
+fprintf(' |An√°lisis Pl√°stico-Elasticidad finita\n');
 fprintf(' |Material de Saint Venant-Kirchhoff\n');
-fprintf(' |DeformaciÛn de Green-Lagrange\n');
+fprintf(' |Deformaci√≥n de Green-Lagrange\n');
 fprintf(' |Algoritmo de mapeo de retorno\n');
 fprintf('\n');
 fprintf(' fuerzas nodales - internas\n');
@@ -238,7 +244,7 @@ disp(epsilonn');
 fprintf(' fluencia\n');
 disp(ftrial);
 %
-% ReacciÛn
+% Reacci√≥n
 %
 R=[T(1,:)*q' T(2,:)*q' T(3,:)*q'; 0 0 0 ; T(7,:)*q' T(8,:)*q' T(9,:)*q']-[A(1,8) A(1,9) A(1,10); 0 0 0; A(3,8) A(3,9) A(3,10)];
 %
@@ -324,14 +330,14 @@ end
         figure(2);
         plot(x1,y1,'LineWidth',1.5);
         title('Plasticidad / Barra 1 --algoritmo de retorno-- \sigma(\epsilon)');
-        ylabel('TensiÛn \sigma');
-        xlabel('DeformaciÛn \epsilon');
+        ylabel('Tensi√≥n \sigma');
+        xlabel('Deformaci√≥n \epsilon');
         hold on;
         figure(3);
         plot(x2,y2,'LineWidth',1.5);
         title('Plasticidad / Barra 2 --algoritmo de retorno-- \sigma(\epsilon)');
-        ylabel('TensiÛn \sigma');
-        xlabel('DeformaciÛn \epsilon');
+        ylabel('Tensi√≥n \sigma');
+        xlabel('Deformaci√≥n \epsilon');
         hold on;
 end
 figure(2);
@@ -341,16 +347,16 @@ figure(3);
 %
 % /\Resultados/\
 %
-fprintf(' |An·lisis Pl·stico-Elasticidad finita\n');
+fprintf(' |An√°lisis Pl√°stico-Elasticidad finita\n');
 fprintf(' |Material de Saint Venant-Kirchhoff\n');
-fprintf(' |DeformaciÛn de Green-Lagrange\n');
+fprintf(' |Deformaci√≥n de Green-Lagrange\n');
 fprintf(' |Algoritmo de mapeo de retorno\n');
 fprintf('\n');
 % 
 fprintf('Matriz K (reducida por condiciones de frontera)\n');
 fprintf('\n');
     disp(Kr);
-fprintf('PosiciÛn final:\n');
+fprintf('Posici√≥n final:\n');
 fprintf('\n'); 
 w=0;
 for q=1:NNodos
@@ -365,7 +371,7 @@ fprintf('Desplazamiento vertical:\n');
 fprintf('\n');
 disp(1-A(2,3));
 x = [0 A(2,2)/1.05 2]; % se amplifica el desplazamiento
-y = [0 A(2,3)/1.05 0]; % para su visualizaciÛn
+y = [0 A(2,3)/1.05 0]; % para su visualizaci√≥n
 z = [0 0 0];        
 figure(1);
 plot(x,y,'ro--','markersize',8,'markerfacecolor','b','linewidth',2);
