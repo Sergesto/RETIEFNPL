@@ -1,9 +1,15 @@
-% Método del Gradiente Conjugado
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% MÃ©todo del Gradiente Conjugado
 % Ing. Sergio A. Merlino Chiozza
 %
 function [A,cont,stop]=gradconj(A,Kr,FN,VEDr,NNodos,cont)
   %
-% Método del Gradiente Conjugado
+% MÃ©todo del Gradiente Conjugado
 %
 xk=(zeros(size(FN)))';
 r=-(FN'-VEDr);
@@ -31,7 +37,7 @@ for q=1:NNodos
     end
 end
 %
-% Condición de parada
+% CondiciÃ³n de parada
 %
 R=FN-VEDr';
 DX=Kr\R';
