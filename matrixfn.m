@@ -1,3 +1,9 @@
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
 % Matriz Kr de la estructura (matriz reducida por condiciones de borde)
 % Ing. Sergio A. Merlino Chiozza
 %
@@ -27,14 +33,14 @@ for t=1:NElem
     C(t,5) = n;
 end
 %
-% Matriz de deformaci髇 unitaria-desplazamiento del elemento
+% Matriz de deformaci贸n unitaria-desplazamiento del elemento
 %
 BB=cell(NElem,1);
 for u = 1:NElem
      BB{u}=1./C(u,2).*[-1 1];
 end
 %
-% Construcci髇 de las matrices K de cada elemento
+% Construcci贸n de las matrices K de cada elemento
 %
 K = cell(NElem,1);
 VEDe = cell(NElem,1);
@@ -44,7 +50,7 @@ for k = 1:NElem
          me=C(k,4);
          ne=C(k,5);
          %
-         % Derivada Segunda de la Energ韆 de Deformaci髇 respecto de E
+         % Derivada Segunda de la Energ铆a de Deformaci贸n respecto de E
          % Componente S11 del Tensor de Cosserat para cada elemento
          %
          if ftrial(u)<=0
@@ -69,7 +75,7 @@ for k = 1:NElem
                                                                        0 -1 0 0 1 0;
                                                                        0 0 -1 0 0 1];
 %
-%   Vector energ韆 de deformaci髇 de cada elemento
+%   Vector energ铆a de deformaci贸n de cada elemento
 %
 VEDe{k}=Ae(k)*lee/L(k)*Se*[-le -me -ne le me ne];
 %    
@@ -90,7 +96,7 @@ for n=1:NElem
    end
 end
 %
-% Vector energ韆 VED de la estructura
+% Vector energ铆a VED de la estructura
 % Ensamble de los vectores VEDe elementales
 %
 VED=zeros(NNodos*3);
@@ -101,7 +107,7 @@ for n=1:NElem
    end
 end
 %
-% Vector Energ韆 de Deformaci髇 VED Reducido
+% Vector Energ铆a de Deformaci贸n VED Reducido
 %
 w=0;
 for q=1:NNodos
